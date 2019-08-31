@@ -42,7 +42,7 @@ form {
   padding: 30px;
   padding-bottom: 350px;
   overflow: hidden;
-  margin: 10px;
+  margin: 20px;
   border-top: 1px solid  rgba(0,0,0,0.25) ;
   border-left: 1px solid rgba(0,0,0,0.25);
   border-radius: 10px;
@@ -170,16 +170,13 @@ img:hover{
 
     button {
       position: relative;
-      width: 150px;
-      font-size: 1.2rem;
+      width: 130px;
+      font-size: 1.1rem;
     }
   }
 
-/*
- @media only screen
-  and (max-device-width: 410px) {
-  .gridContainer {
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(106px, 1fr));
-
-  } */
+.particles-js-canvas-el {
+  position: fixed;
+  z-index: -1;
+  top:0;
+}
