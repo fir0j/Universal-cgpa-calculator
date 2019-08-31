@@ -35,8 +35,8 @@ function calculateCGPA(){
                         + Number(sem2sgpa.value)*Number(sem2Rcredit.value)
                         + Number(sem3sgpa.value)*Number(sem3Rcredit.value)
                         + Number(sem4sgpa.value)*Number(sem4Rcredit.value)
-                        + Number(sem4sgpa.value)*Number(sem1Rcredit.value)
-                        + Number(sem1sgpa.value)*Number(sem1Rcredit.value) ) /
+                        + Number(sem5sgpa.value)*Number(sem5Rcredit.value)
+                        + Number(sem6sgpa.value)*Number(sem6Rcredit.value) ) /
                         (
                           Number(sem1Ecredit.value)
                           +Number(sem2Ecredit.value)
