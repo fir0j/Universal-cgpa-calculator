@@ -121,6 +121,7 @@ border-radius: 20px;
   and (max-device-width: 430px) {
     input {
       margin-left: 15vw;
+      margin-top: 5px;
     }
   }
 
