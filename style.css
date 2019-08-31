@@ -106,7 +106,6 @@ background-color: #4FB9A6;
 color: #F4C65E;
 text-shadow: 0 0 3px red, 0 0 5px blue;
 font-family: monospace;
-border-radius: 20px;
 
 }
 
@@ -121,7 +120,10 @@ border-radius: 20px;
   and (max-device-width: 430px) {
     input {
       margin-left: 15vw;
-      margin-top: 5px;
+    }
+
+    h2 {
+      margin-top: 3px;
     }
   }
 
