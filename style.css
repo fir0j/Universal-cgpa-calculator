@@ -46,7 +46,7 @@ form {
   border-top: 1px solid  rgba(0,0,0,0.25) ;
   border-left: 1px solid rgba(0,0,0,0.25);
   border-radius: 10px;
-  box-shadow: 10px 10px 20px -5px rgba(0,0,0,0.25);
+  box-shadow: 10px 10px 20px 10px rgba(0,0,0,0.25);
 
 }
 
@@ -95,7 +95,7 @@ label {
 
 button {
   position: relative;
-  width: 300px;
+  width: 200px;
   height: 60px;
   border-radius: 10px;
   outline: none;
@@ -104,11 +104,9 @@ button {
   font-size: 25px;
   /* color: #4FB9A6; */
   color: white;
-  margin-right: 5px;
-
-
-
+  margin-right: 15px;
 }
+
 
 .buttonContainer button:first-child:hover,
 .buttonContainer button:last-child:hover {
@@ -121,9 +119,10 @@ font-family: monospace;
 
 }
 
-.buttonContainer .reset {
+.buttonContainer .resetButton {
   width: 160px;
   margin-left: 10px;
+  margin-right: 0px;
 }
 
 
@@ -156,7 +155,21 @@ img:hover{
   opacity: 0.6;
 }
 
+nav {
+  display: flex;
+  width: 100%;
+  overflow: hidden;
+}
 
+nav ul:first-child {
+
+}
+
+nav .help {
+
+}
+nav ul:last-child {
+}
 
  @media only screen
   and (max-device-width: 430px) {
@@ -165,13 +178,18 @@ img:hover{
     }
 
     .labelsAndForms input {
-      margin-left: 20%;
+      margin-left: 16.5%;
     }
 
     button {
       position: relative;
       width: 130px;
       font-size: 1.1rem;
+    }
+
+    nav {
+      display: block;
+      text-align: center;
     }
   }
 
