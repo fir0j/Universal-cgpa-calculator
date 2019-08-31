@@ -163,6 +163,16 @@ img:hover{
     h2 {
       margin-top: 3px;
     }
+
+    .labelsAndForms input {
+      margin-left: 20%;
+    }
+
+    button {
+      position: relative;
+      width: 150px;
+      font-size: 1.2rem;
+    }
   }
 
 /*
