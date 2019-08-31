@@ -112,7 +112,10 @@ border-radius: 20px;
 
 
  @media only screen
-  and (max-device-width: 720px) {
+  and (max-device-width: 430px) {
+    input {
+      margin-left: 15vw;
+    }
   }
 
 /*
