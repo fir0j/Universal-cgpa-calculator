@@ -17,6 +17,7 @@ h2,input {
 
 h2 {
   color: rgba(20, 0, 255, 0.5);
+  margin-bottom: 40px;
 }
 form {
 
@@ -89,7 +90,7 @@ button {
   border-radius: 10px;
   outline: none;
   background-color: #DEC467;
-  opacity: 0.95;
+  opacity: 0.85;
   font-size: 25px;
   color: #4FB9A6;
 
