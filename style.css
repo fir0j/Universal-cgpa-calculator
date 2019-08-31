@@ -88,9 +88,12 @@ button {
   height: 60px;
   border-radius: 10px;
   outline: none;
-  background-color: #4FB9A6;
-  font-size: 30px;
-  color: #F4C65E;
+  background-color: #DEC467;
+  opacity: 0.95;
+  font-size: 25px;
+  color: #4FB9A6;
+
+
 
 }
 
@@ -98,10 +101,12 @@ button:first-child:hover,
 button:last-child:hover {
 cursor: pointer;
 box-shadow: 5px 5px 15px -7px #444;
-background-color: #DEC467;
-color: #4FB9A6;
+background-color: #4FB9A6;
+color: #F4C65E;
+text-shadow: 0 0 3px red, 0 0 5px blue;
 font-family: monospace;
 border-radius: 20px;
+
 }
 
 .buttonContainer .reset {
