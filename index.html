@@ -13,7 +13,14 @@
   <h2> UNIVERSAL CGPA CALCULATOR </h2>
   <form>
 
-    <div class="flexContainer">
+    <h3> Which semester CGPA do you want to calculate ?</h3>
+    <div class="semInput">
+        <input type="text" id="currentSemInput" placeholder="Input integer" value="" onchange="noHighlight()" onfocus="noHighlight()">
+        <!-- <button type="button" id="okButton"></button> -->
+        <img src="./submitIcon.png" alt="Ok" class="imgtag">
+    </div>
+
+    <div class="labelsAndForms">
         <label for="Sem1">Semester 1 </label>
         <div>
           <input type="text" id="sem1sgpa" placeholder="SGPA" value="">
@@ -22,7 +29,7 @@
         </div>
     </div>
 
-    <div class="flexContainer">
+    <div class="labelsAndForms">
 
       <label for="Sem2">Semester 2 </label>
       <div>
@@ -33,7 +40,7 @@
 
     </div>
 
-    <div class="flexContainer">
+    <div class="labelsAndForms">
       <label for="Sem3">Semester 3 </label>
       <div>
         <input type="text" id="sem3sgpa" placeholder="SGPA" value="">
@@ -42,7 +49,7 @@
       </div>
     </div>
 
-    <div class="flexContainer">
+    <div class="labelsAndForms">
       <label for="Sem4">Semester 4 </label>
       <div>
         <input type="text" id="sem4sgpa" placeholder="SGPA" value="">
@@ -51,7 +58,7 @@
       </div>
     </div>
 
-    <div class="flexContainer">
+    <div class="labelsAndForms">
       <label for="Sem5">Semester 5 </label>
       <div>
         <input type="text" id="sem5sgpa" placeholder="SGPA" value="">
@@ -60,7 +67,7 @@
       </div>
     </div>
 
-    <div class="flexContainer">
+    <div class="labelsAndForms">
       <label for="Sem6">Semester 6 </label>
       <div>
         <input type="text" id="sem6sgpa" placeholder="SGPA" value="">
@@ -69,7 +76,7 @@
       </div>
     </div>
 
-    <div class="flexContainer">
+    <div class="labelsAndForms">
       <label for="Sem7">Semester 7 </label>
       <div>
         <input type="text" id="sem7sgpa" placeholder="SGPA" value="">
@@ -78,7 +85,7 @@
       </div>
     </div>
 
-    <div class="flexContainer">
+    <div class="labelsAndForms">
       <label for="Sem8">Semester 8 </label>
       <div>
         <input type="text" id="sem8sgpa" placeholder="SGPA" value="">
@@ -97,7 +104,6 @@
     <button type="submit" id="cgpaButton"> Calculate CGPA</button>
     <button type="reset" id="resetButton">ResetAll</button>
   </div>
-
 
   <script type="text/javascript" src="./script.js"> </script>
 </body>

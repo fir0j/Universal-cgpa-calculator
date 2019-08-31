@@ -1,3 +1,4 @@
+
 // selecting each semesters sgpa
 var sem1sgpa = document.querySelector("#sem1sgpa");
 var sem2sgpa = document.querySelector("#sem2sgpa");
@@ -22,21 +23,63 @@ var sem4Ecredit = document.querySelector("#sem4Ecredit");
 var sem5Ecredit = document.querySelector("#sem5Ecredit");
 var sem6Ecredit = document.querySelector("#sem6Ecredit");
 
+
+
 // selecting area to display result
 var result = document.querySelector("span");
 
 //selecting each buttons
 var cgpaButton = document.querySelector("#cgpaButton");
 var resetButton = document.querySelector("#resetButton");
+var showSemButton = document.querySelector("#showSem");
 
-//defining functions to CGPA calculation
+//hiding and showing labelsAndForms function
+
+var allFormsArray = document.querySelectorAll(".labelsAndForms");
+var imgIcon = document.querySelector("img");
+
+function noHighlight(){
+  imgIcon.classList.add("nofocus");
+}
+
+function Highlight(){
+    imgIcon.classList.remove("nofocus");
+}
+
+function hideLabelsAndForms(){
+      allFormsArray.forEach(function(element){
+        element.style.display = "none";
+      })
+}
+hideLabelsAndForms();
+
+function showLabelsAndForms(){
+    Highlight();
+    hideLabelsAndForms();
+    var currentSemInput = document.querySelector("#currentSemInput");
+    for(var i=0; i<Number(currentSemInput.value);i++){
+      allFormsArray[i].style.display = 'block';
+    }
+}
+imgIcon.addEventListener("click", showLabelsAndForms)
+
+
+
+// var sem = Number(currentSemInput.value);
+
+
+
+// defining functions to CGPA calculation
 function calculateCGPA(){
   result.textContent = ( Number(sem1sgpa.value)*Number(sem1Rcredit.value)
                         + Number(sem2sgpa.value)*Number(sem2Rcredit.value)
                         + Number(sem3sgpa.value)*Number(sem3Rcredit.value)
                         + Number(sem4sgpa.value)*Number(sem4Rcredit.value)
                         + Number(sem5sgpa.value)*Number(sem5Rcredit.value)
-                        + Number(sem6sgpa.value)*Number(sem6Rcredit.value) ) /
+                        + Number(sem6sgpa.value)*Number(sem6Rcredit.value)
+                        + Number(sem7sgpa.value)*Number(sem7Rcredit.value)
+                        + Number(sem8sgpa.value)*Number(sem8Rcredit.value)
+                      ) /
                         (
                           Number(sem1Ecredit.value)
                           +Number(sem2Ecredit.value)
@@ -44,10 +87,12 @@ function calculateCGPA(){
                           +Number(sem4Ecredit.value)
                           +Number(sem5Ecredit.value)
                           +Number(sem6Ecredit.value)
+                          +Number(sem7Ecredit.value)
+                          +Number(sem8Ecredit.value)
                         );
 }
 
 
 //addng eventListener to each button and calling respective functions
 cgpaButton.addEventListener("click", calculateCGPA);
-//resetButton.addEventListener("click", resetSGPA);
+// resetButton.addEventListener("click", resetCGPA);
