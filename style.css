@@ -17,7 +17,7 @@ h2,input {
 
 h2 {
   color: rgba(20, 0, 255, 0.5);
-  margin-bottom: 40px;
+  margin-bottom: 80px;
 }
 
 h3 {
@@ -40,7 +40,7 @@ form {
   justify-content: center;
   grid-gap:25px;
   padding: 30px;
-  padding-bottom: 140px;
+  padding-bottom: 350px;
   overflow: hidden;
   margin: 10px;
   border-top: 1px solid  rgba(0,0,0,0.25) ;
@@ -64,7 +64,7 @@ label {
   height: auto;
   width: 50%;
   margin-left: 25%;
-  margin-top: -120px;
+  margin-top: -300px;
   color: lightblue;
   background-image: linear-gradient( 69.5deg,  rgba(1,179,201,1) 2.7%, rgba(255,199,89,1) 97.2% );
   border: 1px solid lightblue;
@@ -95,7 +95,7 @@ label {
 
 button {
   position: relative;
-  width: 400px;
+  width: 300px;
   height: 60px;
   border-radius: 10px;
   outline: none;
@@ -104,6 +104,7 @@ button {
   font-size: 25px;
   /* color: #4FB9A6; */
   color: white;
+  margin-right: 5px;
 
 
 
