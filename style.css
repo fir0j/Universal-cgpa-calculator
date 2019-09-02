@@ -115,7 +115,6 @@ box-shadow: 5px 5px 15px -7px #444;
 background-color: #4FB9A6;
 color: #F4C65E;
 text-shadow: 0 0 3px red, 0 0 5px blue;
-font-family: monospace;
 
 }
 
@@ -159,13 +158,30 @@ nav {
   display: flex;
   width: 100%;
   overflow: hidden;
+  background-image: linear-gradient( 69.5deg,  rgba(1,179,201,0.5) 2.7%, rgba(255,199,89,0.5) 97.2% );
+}
+
+nav ul {
+  margin-top: 1px;
+}
+
+nav a {
+  text-decoration: none;
 }
 
 nav ul::before {
-  width: auto;
-  height: 10px;
-  color: blue;
-  background-color: green;
+  content: '';
+  display: table;
+  width: 0%;
+  height: 4px;
+  background-image: linear-gradient( 109.6deg,  rgba(255,179,71,1) 11.2%, rgba(255,155,57,1) 91.1% );
+  transition: all ease-in-out 250ms;
+  margin-bottom: 10px;
+  border-radius: 5px;
+}
+
+nav ul:hover::before {
+  width: 100%;
 }
 
 nav .calculatorName {
@@ -196,11 +212,11 @@ nav ul:last-child {
     nav {
       /* display: block; */
       text-align: center;
-      font-size: 0.7rem;
+      font-size: 0.8rem;
     }
 
     nav ul:last-child {
-      margin-right: 0;
+      margin-right: 30px;
     }
 
   }
