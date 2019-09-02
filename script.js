@@ -60,11 +60,6 @@ function showLabelsAndForms(){
       allFormsArray[i].style.display = 'block';
     }
 }
-// imgIcon.addEventListener("click", showLabelsAndForms)
-
-
-
-// var sem = Number(currentSemInput.value);
 
 
 
@@ -94,7 +89,6 @@ function calculateCGPA(){
 
 //addng eventListener to each button and calling respective functions
 cgpaButton.addEventListener("click", calculateCGPA);
-// resetButton.addEventListener("click", resetCGPA);
 
 
 
