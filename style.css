@@ -24,10 +24,10 @@ h3 {
   color:white;
 }
 
-#currentSem {
+/* #currentSem {
   margin: 0 auto;
   left: 1vw;
-}
+} */
 
 form {
 
@@ -88,6 +88,17 @@ label {
   display: flex;
   justify-content: center;
   text-align: center;
+}
+
+h4 {
+  font-family: 'Lobster', cursive;
+  letter-spacing: 1.5rem;
+  color: #c0392b;
+  opacity: 0.8;
+}
+
+h3,select,option,button {
+  font-family: 'Livvic', sans-serif;
 }
 
 .result span {
@@ -162,6 +173,7 @@ nav {
   width: 100%;
   overflow: hidden;
   background-image: linear-gradient( 69.5deg,  rgba(1,179,201,0.5) 2.7%, rgba(255,199,89,0.5) 97.2% );
+  font-family: 'Chilanka', cursive;
 }
 
 nav ul {
@@ -207,6 +219,31 @@ nav ul:last-child {
   margin-right: 40px;
 }
 
+
+#helpImage {
+  position: relative;
+  display: flex;
+  justify-content: center;
+}
+
+h4 {
+  margin-top: 50px;
+  margin-left: 10px;
+  margin-right: 10px;
+  border: 3px solid #c0392b;
+  border-top:none;
+  border-radius: 5px;
+  padding-bottom: 10px;
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 0;
+}
+
+#helpImage img {
+  width: auto;
+  height: 100%;
+}
+
  @media only screen
   and (max-device-width: 430px) {
     h2 {
@@ -240,6 +277,11 @@ nav ul:last-child {
 
     .help {
       padding-left: 20px;
+    }
+
+    #helpImage img{
+      width: 330px;
+      margin-left: 5px;
     }
 
   }

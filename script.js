@@ -33,10 +33,8 @@ var cgpaButton = document.querySelector("#cgpaButton");
 var resetButton = document.querySelector("#resetButton");
 var showSemButton = document.querySelector("#showSem");
 
-//hiding and showing labelsAndForms function
 
 var allFormsArray = document.querySelectorAll(".labelsAndForms");
-// var imgIcon = document.querySelector("#submitIcon");
 
 // function noHighlight(){
 //   imgIcon.classList.add("nofocus");
@@ -46,6 +44,8 @@ var allFormsArray = document.querySelectorAll(".labelsAndForms");
 //     imgIcon.classList.remove("nofocus");
 // }
 
+
+//hiding and showing labelsAndForms function
 function hideLabelsAndForms(){
       allFormsArray.forEach(function(element){
         element.style.display = "none";
@@ -90,7 +90,19 @@ function calculateCGPA(){
 //addng eventListener to each button and calling respective functions
 cgpaButton.addEventListener("click", calculateCGPA);
 
+var help = document.querySelector(".help");
+var helpImage = document.querySelector("#helpImage");
+var helpDesk = document.querySelector("h4");
 
+helpImage.style.display = "none";
+helpDesk.style.display = "none";
+
+function showHelp() {
+  helpImage.style.display = "";
+  helpDesk.style.display = "";
+}
+
+help.addEventListener("click", showHelp);
 
 
 
