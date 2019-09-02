@@ -36,15 +36,15 @@ var showSemButton = document.querySelector("#showSem");
 //hiding and showing labelsAndForms function
 
 var allFormsArray = document.querySelectorAll(".labelsAndForms");
-var imgIcon = document.querySelector("#submitIcon");
+// var imgIcon = document.querySelector("#submitIcon");
 
-function noHighlight(){
-  imgIcon.classList.add("nofocus");
-}
-
-function Highlight(){
-    imgIcon.classList.remove("nofocus");
-}
+// function noHighlight(){
+//   imgIcon.classList.add("nofocus");
+// }
+//
+// function Highlight(){
+//     imgIcon.classList.remove("nofocus");
+// }
 
 function hideLabelsAndForms(){
       allFormsArray.forEach(function(element){
@@ -54,14 +54,13 @@ function hideLabelsAndForms(){
 hideLabelsAndForms();
 
 function showLabelsAndForms(){
-    Highlight();
     hideLabelsAndForms();
-    var currentSemInput = document.querySelector("#currentSemInput");
-    for(var i=0; i<Number(currentSemInput.value);i++){
+    var semesters = document.querySelector("#semesters");
+    for(var i=0; i<Number(semesters.value);i++){
       allFormsArray[i].style.display = 'block';
     }
 }
-imgIcon.addEventListener("click", showLabelsAndForms)
+// imgIcon.addEventListener("click", showLabelsAndForms)
 
 
 

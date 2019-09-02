@@ -22,11 +22,21 @@
   <form>
 
     <h3> Which semester CGPA do you want to calculate ?</h3>
-    <div class="semInput">
-        <input type="text" id="currentSemInput" placeholder="Input integer" value="" onchange="noHighlight()" onfocus="noHighlight()">
-        <!-- <button type="button" id="okButton"></button> -->
-        <img src="./submitIcon.png" alt="Ok" id="submitIcon">
-    </div>
+    <select id="semesters" onchange="showLabelsAndForms()">
+      <option value="placeholder" > Select</option>
+      <option value="1" >Semester 1</option>
+      <option value="2" >Semester 2</option>
+      <option value="3" >Semester 3</option>
+      <option value="4" >Semester 4</option>
+      <option value="5" >Semester 5</option>
+      <option value="6" >Semester 6</option>
+      <option value="7" >Semester 7</option>
+      <option value="8" >Semester 8</option>
+
+
+        <!-- <input type="text" id="currentSemInput" placeholder="Input integer" value="" onchange="noHighlight()" onfocus="noHighlight()">
+        <img src="./submitIcon.png" alt="Ok" id="submitIcon"> -->
+    </select>
 
     <div class="labelsAndForms">
         <label for="Sem1">Semester 1 </label>
