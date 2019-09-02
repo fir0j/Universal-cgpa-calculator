@@ -36,7 +36,7 @@ var showSemButton = document.querySelector("#showSem");
 //hiding and showing labelsAndForms function
 
 var allFormsArray = document.querySelectorAll(".labelsAndForms");
-var imgIcon = document.querySelector("img");
+var imgIcon = document.querySelector("#submitIcon");
 
 function noHighlight(){
   imgIcon.classList.add("nofocus");
